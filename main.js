@@ -1,9 +1,9 @@
-const myButton = document.getElementById('burger');
-// console.log(myButton);
+const myButton = document.querySelector('.header-right > a');
+ console.log(myButton);
 
 myButton.addEventListener('click',
-    function() {
-        const myMenu = document.getElementById('menu');
-        myMenu.className = myMenu.classList + "active" + "hamburger-menu";
-    }
-);
+function(){
+    const burgerMenu = document.querySelector('.hamburger-menu');
+    burgerMenu.classList.add('active')
+}
+)
