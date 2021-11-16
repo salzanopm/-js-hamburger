@@ -7,3 +7,11 @@ function(){
     burgerMenu.classList.add('active')
 }
 )
+
+const closeButton = document.querySelector('.close');
+closeButton.addEventListener('click',
+function() {
+    const burgerMenu = document.querySelector('.hamburger-menu')
+    burgerMenu.classList.remove('active')
+}
+)
